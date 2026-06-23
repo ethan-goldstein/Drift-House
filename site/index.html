@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Drift House · Coastal Kitchen · Oyster Bar · Crafted Cocktails</title>
+<meta name="description" content="The Drift House — elevated coastal dining in Seabrook, SC. Oyster bar, fresh seafood, steaks, tacos, and crafted cocktails with sunset views all day." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Scroll-driven sky: shifts from sunset to night as you scroll -->
+<div class="sky" aria-hidden="true">
+  <div class="sky-layer sky-day"></div>
+  <div class="sky-layer sky-dusk"></div>
+  <div class="sky-layer sky-night"></div>
+  <div class="stars"></div>
+</div>
+
+<!-- Ambient sound toggle -->
+<button class="sound-toggle" id="soundToggle" aria-label="Toggle ambient sound" title="Ambient sound">
+  <span class="sound-icon">
+    <i></i><i></i><i></i><i></i>
+  </span>
+  <span class="sound-label">Ambience</span>
+</button>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="The Drift House home">
+    <svg class="brand-mark" viewBox="0 0 48 24" aria-hidden="true">
+      <path d="M2 17 C 9 10, 15 10, 22 17 C 28 22, 34 22, 40 17" />
+      <path d="M8 22 C 14 16, 20 16, 26 22 C 31 26, 37 26, 44 22" opacity="0.55"/>
+    </svg>
+    <span class="brand-text">
+      <span class="brand-the">THE</span>
+      <span class="brand-name">DRIFT&nbsp;HOUSE</span>
+    </span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#menu">Menu</a>
+    <a href="#cocktails">Cocktails</a>
+    <a href="#events">Events</a>
+    <a href="#catering">Catering</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="#giftcard" class="btn btn-ghost">Gift Card</a>
+    <a href="#reserve" class="btn btn-beacon">Reserve a Table</a>
+  </div>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <img src="images/exterior-sunset.png" alt="The Drift House at sunset, oceanfront patio glowing with warm light" />
+    <div class="hero-veil"></div>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">Seabrook, South Carolina</p>
+    <h1 class="hero-title reveal">The Drift House</h1>
+    <p class="hero-tag reveal">Coastal Kitchen&nbsp;&nbsp;•&nbsp;&nbsp;Oyster Bar&nbsp;&nbsp;•&nbsp;&nbsp;Crafted Cocktails</p>
+    <p class="hero-sub reveal">Sunset vibes all day. Oysters at dusk, tacos after the beach, cocktails that last all night.</p>
+    <div class="hero-cta reveal">
+      <a href="#reserve" class="btn btn-beacon btn-lg">Reserve a Table</a>
+      <a href="#menu" class="btn btn-line btn-lg">Explore the Menu</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span>Scroll</span>
+    <span class="scroll-cue-line"></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-copy">
+      <p class="eyebrow reveal">Our Story</p>
+      <h2 class="reveal">A seat is always waiting for you.</h2>
+      <p class="reveal">The Drift House was founded on one simple idea: bring elevated coastal dining to a place where everyone feels at home.</p>
+      <p class="reveal">Inspired by the beaches of the Carolinas and the seafood shacks scattered along the Atlantic coast, we combine fresh ingredients, handcrafted cocktails, and warm hospitality to create memorable experiences — from casual lunches to celebrations that last all night.</p>
+      <p class="reveal">Whether you're joining us for oysters at sunset, tacos after a beach day, or cocktails with friends, there's always a seat waiting for you.</p>
+      <div class="about-tags reveal">
+        <span>Outer Banks × Charleston</span>
+        <span>Dockside × Upscale</span>
+        <span>Polo or Sundress</span>
+      </div>
+    </div>
+    <div class="about-media reveal">
+      <img src="images/interior.png" alt="Warm wood-and-stone dining room with rattan pendants and ocean views" />
+      <div class="about-media-badge">
+        <span class="big">est.</span>
+        <span class="small">on the Atlantic</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="section-head">
+    <p class="eyebrow reveal">From the Kitchen</p>
+    <h2 class="reveal">The Menu</h2>
+    <p class="section-lead reveal">Gulf oysters, blackened mahi, lobster rolls, dry-aged steak. Pulled from the coast, finished with care.</p>
+  </div>
+
+  <h3 class="menu-cat reveal">Starters</h3>
+  <div class="album-row">
+    <article class="album reveal" style="--art:url('images/oyster-night.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Charred Gulf Oysters</h4><span class="price">$18</span></div>
+      <p class="album-desc">Wood-fired, garlic-herb butter, lemon</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/brunch.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Crab Dip &amp; Sourdough</h4><span class="price">$16</span></div>
+      <p class="album-desc">Warm lump crab, toasted sourdough</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/tacos.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Crispy Calamari</h4><span class="price">$17</span></div>
+      <p class="album-desc">Flash-fried, charred lemon aioli</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/interior.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Truffle Parmesan Fries</h4><span class="price">$12</span></div>
+      <p class="album-desc">Black truffle, aged parm, herbs</p>
+    </article>
+  </div>
+
+  <h3 class="menu-cat reveal">Signature Plates</h3>
+  <div class="album-row">
+    <article class="album reveal" style="--art:url('images/tacos.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Blackened Mahi Tacos</h4><span class="price">$24</span></div>
+      <p class="album-desc">Citrus slaw, mango, crema</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/brunch.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Lobster Roll</h4><span class="price">$29</span></div>
+      <p class="album-desc">Buttered brioche, Old Bay fries</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/exterior-sunset.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Bourbon Glazed Salmon</h4><span class="price">$33</span></div>
+      <p class="album-desc">Brown-butter bourbon glaze</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/cocktail.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Ribeye &amp; Herb Butter</h4><span class="price">$46</span></div>
+      <p class="album-desc">Dry-aged, smoked sea salt</p>
+    </article>
+    <article class="album reveal" style="--art:url('images/brunch.png')">
+      <div class="album-art"></div>
+      <div class="album-meta"><h4>Shrimp &amp; Grits</h4><span class="price">$28</span></div>
+      <p class="album-desc">Stone-ground grits, andouille</p>
+    </article>
+  </div>
+</section>
+
+<!-- COCKTAILS -->
+<section class="cocktails" id="cocktails">
+  <div class="cocktails-bg">
+    <img src="images/cocktail.png" alt="" aria-hidden="true" />
+  </div>
+  <div class="section-head light">
+    <p class="eyebrow reveal">The Bar</p>
+    <h2 class="reveal">Crafted Cocktails</h2>
+    <p class="section-lead reveal">Hand-shaken, coast-inspired, served until close.</p>
+  </div>
+  <div class="tilt-row">
+    <article class="tilt-card reveal" data-tilt>
+      <div class="tilt-inner">
+        <span class="tilt-no">01</span>
+        <h4>Harbor Mule</h4>
+        <p>Vodka, fresh lime, ginger beer, mint</p>
+        <span class="tilt-tag">House favorite</span>
+      </div>
+    </article>
+    <article class="tilt-card reveal" data-tilt>
+      <div class="tilt-inner">
+        <span class="tilt-no">02</span>
+        <h4>Sunset Sangria</h4>
+        <p>Rosé, stone fruit, citrus, soda</p>
+        <span class="tilt-tag">Patio pour</span>
+      </div>
+    </article>
+    <article class="tilt-card reveal" data-tilt>
+      <div class="tilt-inner">
+        <span class="tilt-no">03</span>
+        <h4>Blackberry Old Fashioned</h4>
+        <p>Bourbon, blackberry, bitters, smoke</p>
+        <span class="tilt-tag">Top shelf</span>
+      </div>
+    </article>
+    <article class="tilt-card reveal" data-tilt>
+      <div class="tilt-inner">
+        <span class="tilt-no">04</span>
+        <h4>Coconut Espresso Martini</h4>
+        <p>Espresso, vanilla vodka, coconut</p>
+        <span class="tilt-tag">Nightcap</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events" id="events">
+  <div class="events-bg">
+    <img src="images/rooftop-sunset.png" alt="" aria-hidden="true" />
+  </div>
+  <div class="string-lights" aria-hidden="true"></div>
+  <div class="section-head light">
+    <p class="eyebrow reveal">After Dark</p>
+    <h2 class="reveal">Events &amp; Nights</h2>
+    <p class="section-lead reveal">The rooftop lights come on, the music starts, and the night unfolds.</p>
+  </div>
+  <div class="events-grid">
+    <article class="event-card reveal">
+      <span class="event-day">Every Thursday</span>
+      <h3>Oyster Nights</h3>
+      <ul>
+        <li>Half-price oysters</li>
+        <li>Live acoustic music</li>
+        <li>Cocktail specials</li>
+      </ul>
+    </article>
+    <article class="event-card reveal">
+      <span class="event-day">Every Friday</span>
+      <h3>Sunset Sessions</h3>
+      <ul>
+        <li>Local DJs</li>
+        <li>Rooftop bar</li>
+        <li>Sunset cocktail menu</li>
+      </ul>
+    </article>
+    <article class="event-card reveal">
+      <span class="event-day">Every Sunday · 10am–2pm</span>
+      <h3>Coastal Brunch</h3>
+      <ul>
+        <li>Lobster Benedict</li>
+        <li>Banana Foster French Toast</li>
+        <li>Shrimp &amp; Grits · Mimosa flights</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- CATERING -->
+<section class="catering" id="catering">
+  <div class="section-head">
+    <p class="eyebrow reveal">Private Events</p>
+    <h2 class="reveal">Catering &amp; Buyouts</h2>
+    <p class="section-lead reveal">Weddings, corporate dinners, birthdays, rehearsal dinners, holiday parties — hosted on the coast.</p>
+  </div>
+  <div class="pkg-row">
+    <article class="pkg reveal">
+      <h3>Harbor Package</h3>
+      <p class="pkg-price">from <strong>$28</strong>/person</p>
+      <ul>
+        <li>Build-your-own taco bar</li>
+        <li>Seasonal salads</li>
+        <li>Dessert trays</li>
+      </ul>
+      <a href="#reserve" class="btn btn-line">Inquire</a>
+    </article>
+    <article class="pkg pkg-featured reveal">
+      <span class="pkg-flag">Most Popular</span>
+      <h3>Coastal Feast</h3>
+      <p class="pkg-price">from <strong>$65</strong>/person</p>
+      <ul>
+        <li>Raw-bar oysters</li>
+        <li>Grilled salmon</li>
+        <li>Prime rib carving station</li>
+        <li>Signature cocktails</li>
+      </ul>
+      <a href="#reserve" class="btn btn-beacon">Inquire</a>
+    </article>
+    <article class="pkg reveal">
+      <h3>Full Restaurant Buyout</h3>
+      <p class="pkg-price"><strong>Up to 180</strong> guests</p>
+      <ul>
+        <li>Indoor + patio access</li>
+        <li>Fully custom menu</li>
+        <li>Dedicated event coordinator</li>
+      </ul>
+      <a href="#reserve" class="btn btn-line">Inquire</a>
+    </article>
+  </div>
+</section>
+
+<!-- GIFT CARD -->
+<section class="giftcard" id="giftcard">
+  <div class="gift-inner">
+    <div class="gift-card-visual reveal" data-tilt>
+      <div class="gift-card-face">
+        <div class="gift-shine"></div>
+        <svg class="gift-mark" viewBox="0 0 48 24" aria-hidden="true">
+          <path d="M2 17 C 9 10, 15 10, 22 17 C 28 22, 34 22, 40 17" />
+          <path d="M8 22 C 14 16, 20 16, 26 22 C 31 26, 37 26, 44 22" opacity="0.55"/>
+        </svg>
+        <span class="gift-brand">THE DRIFT HOUSE</span>
+        <span class="gift-amount">Gift Card</span>
+        <span class="gift-no">•••• •••• •••• 0455</span>
+      </div>
+    </div>
+    <div class="gift-copy reveal">
+      <p class="eyebrow">Give the Coast</p>
+      <h2>Buy a Gift Card</h2>
+      <p>The perfect gift for the seafood lover, the cocktail enthusiast, or anyone who loves a sunset. Redeemable for dining, the bar, and private events.</p>
+      <div class="gift-amounts">
+        <button class="chip">$50</button>
+        <button class="chip">$100</button>
+        <button class="chip chip-on">$150</button>
+        <button class="chip">$250</button>
+        <button class="chip">Custom</button>
+      </div>
+      <a href="#reserve" class="btn btn-beacon btn-lg">Purchase Gift Card</a>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT / RESERVE -->
+<section class="visit" id="visit">
+  <div class="visit-media reveal">
+    <img src="images/exterior-night.png" alt="The Drift House at night, glowing warmly under string lights" />
+  </div>
+  <div class="visit-info" id="reserve">
+    <p class="eyebrow reveal">Visit Us</p>
+    <h2 class="reveal">Find Your Seat</h2>
+
+    <div class="visit-cols">
+      <div class="reveal">
+        <h4>Location</h4>
+        <p class="visit-addr">128 Harbor Walk Blvd<br/>Seabrook, SC 29455</p>
+        <a class="visit-link" href="https://maps.google.com/?q=128+Harbor+Walk+Blvd+Seabrook+SC+29455" target="_blank" rel="noopener">Get Directions →</a>
+      </div>
+      <div class="reveal">
+        <h4>Hours</h4>
+        <table class="hours">
+          <tr><td>Mon</td><td>11am – 9pm</td></tr>
+          <tr><td>Tue</td><td>11am – 9pm</td></tr>
+          <tr><td>Wed</td><td>11am – 10pm</td></tr>
+          <tr><td>Thu</td><td>11am – 10pm</td></tr>
+          <tr><td>Fri</td><td>11am – 11pm</td></tr>
+          <tr><td>Sat</td><td>10am – 11pm</td></tr>
+          <tr><td>Sun</td><td>10am – 9pm</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <form class="reserve-form reveal" id="reserveForm" novalidate>
+      <h4>Reserve a Table</h4>
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="tel" name="phone" placeholder="Phone" required />
+      </div>
+      <div class="form-row">
+        <input type="date" name="date" required />
+        <input type="time" name="time" required />
+        <select name="party" required>
+          <option value="">Party size</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option>
+          <option>5</option><option>6</option><option>7</option><option>8+</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-beacon btn-lg btn-block">Request Reservation</button>
+      <p class="form-note" id="formNote" hidden>Thanks! We'll confirm your table by text shortly. 🌊</p>
+      <p class="form-tiny">Or call <a href="tel:+18435557294">(843) 555-7294</a> · parties of 9+ please email <a href="mailto:events@thedrifthousecoastal.com">events@thedrifthousecoastal.com</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 48 24" aria-hidden="true">
+          <path d="M2 17 C 9 10, 15 10, 22 17 C 28 22, 34 22, 40 17" />
+          <path d="M8 22 C 14 16, 20 16, 26 22 C 31 26, 37 26, 44 22" opacity="0.55"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-the">THE</span>
+          <span class="brand-name">DRIFT&nbsp;HOUSE</span>
+        </span>
+      </a>
+      <p class="footer-tag">Coastal Kitchen • Oyster Bar • Crafted Cocktails</p>
+    </div>
+    <div class="footer-col">
+      <h5>Reservations</h5>
+      <a href="tel:+18435557294">(843) 555-7294</a>
+      <a href="mailto:orders@thedrifthousecoastal.com">orders@thedrifthousecoastal.com</a>
+    </div>
+    <div class="footer-col">
+      <h5>Catering &amp; Events</h5>
+      <a href="mailto:events@thedrifthousecoastal.com">events@thedrifthousecoastal.com</a>
+      <a href="mailto:hello@thedrifthousecoastal.com">hello@thedrifthousecoastal.com</a>
+    </div>
+    <div class="footer-col">
+      <h5>Find Us</h5>
+      <a href="https://maps.google.com/?q=128+Harbor+Walk+Blvd+Seabrook+SC+29455" target="_blank" rel="noopener">128 Harbor Walk Blvd<br/>Seabrook, SC 29455</a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram · @drifthouse</a>
+        <a href="#" aria-label="TikTok">TikTok · @drifthousecoastal</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>© 2026 The Drift House · Seabrook, SC</span>
+    <span class="footer-credit">Sunset vibes all day.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
