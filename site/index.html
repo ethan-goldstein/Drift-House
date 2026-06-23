@@ -20,14 +20,6 @@
   <div class="stars"></div>
 </div>
 
-<!-- Ambient sound toggle -->
-<button class="sound-toggle" id="soundToggle" aria-label="Toggle ambient sound" title="Ambient sound">
-  <span class="sound-icon">
-    <i></i><i></i><i></i><i></i>
-  </span>
-  <span class="sound-label">Ambience</span>
-</button>
-
 <!-- NAV -->
 <header class="nav" id="nav">
   <a href="#top" class="brand" aria-label="The Drift House home">
@@ -106,60 +98,183 @@
   <div class="section-head">
     <p class="eyebrow reveal">From the Kitchen</p>
     <h2 class="reveal">The Menu</h2>
-    <p class="section-lead reveal">Gulf oysters, blackened mahi, lobster rolls, dry-aged steak. Pulled from the coast, finished with care.</p>
+    <p class="section-lead reveal">Gulf oysters, blackened mahi, lobster rolls, dry-aged steak, and crafted cocktails. Pulled from the coast, finished with care.</p>
   </div>
 
-  <h3 class="menu-cat reveal">Starters</h3>
-  <div class="album-row">
-    <article class="album reveal" style="--art:url('images/oyster-night.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Charred Gulf Oysters</h4><span class="price">$18</span></div>
-      <p class="album-desc">Wood-fired, garlic-herb butter, lemon</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/brunch.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Crab Dip &amp; Sourdough</h4><span class="price">$16</span></div>
-      <p class="album-desc">Warm lump crab, toasted sourdough</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/tacos.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Crispy Calamari</h4><span class="price">$17</span></div>
-      <p class="album-desc">Flash-fried, charred lemon aioli</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/interior.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Truffle Parmesan Fries</h4><span class="price">$12</span></div>
-      <p class="album-desc">Black truffle, aged parm, herbs</p>
-    </article>
-  </div>
+  <div class="menu-grid">
 
-  <h3 class="menu-cat reveal">Signature Plates</h3>
-  <div class="album-row">
-    <article class="album reveal" style="--art:url('images/tacos.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Blackened Mahi Tacos</h4><span class="price">$24</span></div>
-      <p class="album-desc">Citrus slaw, mango, crema</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/brunch.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Lobster Roll</h4><span class="price">$29</span></div>
-      <p class="album-desc">Buttered brioche, Old Bay fries</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/exterior-sunset.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Bourbon Glazed Salmon</h4><span class="price">$33</span></div>
-      <p class="album-desc">Brown-butter bourbon glaze</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/cocktail.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Ribeye &amp; Herb Butter</h4><span class="price">$46</span></div>
-      <p class="album-desc">Dry-aged, smoked sea salt</p>
-    </article>
-    <article class="album reveal" style="--art:url('images/brunch.png')">
-      <div class="album-art"></div>
-      <div class="album-meta"><h4>Shrimp &amp; Grits</h4><span class="price">$28</span></div>
-      <p class="album-desc">Stone-ground grits, andouille</p>
-    </article>
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">Raw Bar</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">East Coast Oysters</span><span class="mi-dots"></span><span class="mi-price">19 / 36</span></div>
+        <p class="mi-desc">Half dozen or dozen · mignonette, cocktail, lemon</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Charred Gulf Oysters</span><span class="mi-dots"></span><span class="mi-price">18</span></div>
+        <p class="mi-desc">Wood-fired, garlic-herb butter, lemon</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Jumbo Shrimp Cocktail</span><span class="mi-dots"></span><span class="mi-price">19</span></div>
+        <p class="mi-desc">Chilled, house cocktail sauce, charred lemon</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">The Drift Tower</span><span class="mi-dots"></span><span class="mi-price">68</span></div>
+        <p class="mi-desc">Oysters, shrimp, snow crab, ceviche — for the table</p>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">Starters</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Crab Dip &amp; Toasted Sourdough</span><span class="mi-dots"></span><span class="mi-price">16</span></div>
+        <p class="mi-desc">Warm lump crab, three cheeses, grilled sourdough</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Crispy Calamari</span><span class="mi-dots"></span><span class="mi-price">17</span></div>
+        <p class="mi-desc">Flash-fried, cherry peppers, charred lemon aioli</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Truffle Parmesan Fries</span><span class="mi-dots"></span><span class="mi-price">12</span></div>
+        <p class="mi-desc">Black truffle, aged parmesan, fresh herbs</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">She-Crab Soup</span><span class="mi-dots"></span><span class="mi-price">13</span></div>
+        <p class="mi-desc">Low Country classic, sherry, lump crab</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Steamed P.E.I. Mussels</span><span class="mi-dots"></span><span class="mi-price">18</span></div>
+        <p class="mi-desc">White wine, garlic, chorizo, grilled bread</p>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">Tacos</h3>
+      <p class="menu-note">Served as a trio with citrus slaw &amp; chips</p>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Blackened Mahi</span><span class="mi-dots"></span><span class="mi-price">24</span></div>
+        <p class="mi-desc">Mango salsa, cabbage, lime crema</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Baja Shrimp</span><span class="mi-dots"></span><span class="mi-price">22</span></div>
+        <p class="mi-desc">Crispy shrimp, chipotle aioli, pickled onion</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Carne Asada</span><span class="mi-dots"></span><span class="mi-price">23</span></div>
+        <p class="mi-desc">Grilled steak, cotija, salsa verde</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Crispy Avocado</span><span class="mi-dots"></span><span class="mi-price">19</span></div>
+        <p class="mi-desc">Cornmeal-crusted avocado, corn, lime — veg</p>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">From the Sea</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Lobster Roll</span><span class="mi-dots"></span><span class="mi-price">29</span></div>
+        <p class="mi-desc">Buttered brioche, lemon aioli, Old Bay fries</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Bourbon Glazed Salmon</span><span class="mi-dots"></span><span class="mi-price">33</span></div>
+        <p class="mi-desc">Brown-butter bourbon glaze, charred broccolini</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Shrimp &amp; Grits</span><span class="mi-dots"></span><span class="mi-price">28</span></div>
+        <p class="mi-desc">Stone-ground grits, andouille, tomato gravy</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Seared Sea Scallops</span><span class="mi-dots"></span><span class="mi-price">36</span></div>
+        <p class="mi-desc">Sweet corn purée, pancetta, micro herbs</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Low Country Boil</span><span class="mi-dots"></span><span class="mi-price">39</span></div>
+        <p class="mi-desc">Shrimp, snow crab, sausage, corn, potatoes</p>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">From the Land</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Ribeye &amp; Herb Butter</span><span class="mi-dots"></span><span class="mi-price">46</span></div>
+        <p class="mi-desc">16oz dry-aged, smoked sea salt, herb butter</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Filet Mignon</span><span class="mi-dots"></span><span class="mi-price">42</span></div>
+        <p class="mi-desc">8oz center-cut, red wine demi, whipped potato</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Half Roasted Chicken</span><span class="mi-dots"></span><span class="mi-price">27</span></div>
+        <p class="mi-desc">Lemon-thyme jus, seasonal vegetables</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">The Drift Burger</span><span class="mi-dots"></span><span class="mi-price">19</span></div>
+        <p class="mi-desc">Wagyu blend, aged cheddar, special sauce, fries</p>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">Sides</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Old Bay Fries</span><span class="mi-dots"></span><span class="mi-price">7</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Stone-Ground Grits</span><span class="mi-dots"></span><span class="mi-price">7</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Charred Broccolini</span><span class="mi-dots"></span><span class="mi-price">9</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Lobster Mac &amp; Cheese</span><span class="mi-dots"></span><span class="mi-price">14</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Seasonal Garden Salad</span><span class="mi-dots"></span><span class="mi-price">8</span></div>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">Signature Cocktails</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Harbor Mule</span><span class="mi-dots"></span><span class="mi-price">14</span></div>
+        <p class="mi-desc">Vodka, fresh lime, ginger beer, mint</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Sunset Sangria</span><span class="mi-dots"></span><span class="mi-price">13</span></div>
+        <p class="mi-desc">Rosé, stone fruit, citrus, soda</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Blackberry Old Fashioned</span><span class="mi-dots"></span><span class="mi-price">16</span></div>
+        <p class="mi-desc">Bourbon, blackberry, bitters, smoked</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Coconut Espresso Martini</span><span class="mi-dots"></span><span class="mi-price">15</span></div>
+        <p class="mi-desc">Espresso, vanilla vodka, coconut cream</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Painkiller</span><span class="mi-dots"></span><span class="mi-price">14</span></div>
+        <p class="mi-desc">Rum, pineapple, coconut, orange, nutmeg</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Salted Lime Margarita</span><span class="mi-dots"></span><span class="mi-price">13</span></div>
+        <p class="mi-desc">Blanco tequila, lime, agave, sea salt</p>
+      </div>
+    </div>
+
+    <div class="menu-group reveal">
+      <h3 class="menu-cat">Wine, Beer &amp; Zero-Proof</h3>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Wines by the Glass</span><span class="mi-dots"></span><span class="mi-price">11+</span></div>
+        <p class="mi-desc">Rotating red, white, rosé &amp; sparkling — ask your server</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Draft &amp; Coastal Craft Beer</span><span class="mi-dots"></span><span class="mi-price">7+</span></div>
+        <p class="mi-desc">Local lagers, IPAs &amp; seasonal pours on tap</p>
+      </div>
+      <div class="menu-item">
+        <div class="mi-head"><span class="mi-name">Zero-Proof Coolers</span><span class="mi-dots"></span><span class="mi-price">9</span></div>
+        <p class="mi-desc">Cucumber spritz, blackberry smash, virgin painkiller</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -254,10 +369,20 @@
 <!-- CATERING -->
 <section class="catering" id="catering">
   <div class="section-head">
-    <p class="eyebrow reveal">Private Events</p>
-    <h2 class="reveal">Catering &amp; Buyouts</h2>
-    <p class="section-lead reveal">Weddings, corporate dinners, birthdays, rehearsal dinners, holiday parties — hosted on the coast.</p>
+    <p class="eyebrow reveal">Catering</p>
+    <h2 class="reveal">We Cater the Coast</h2>
+    <p class="section-lead reveal">Bring The Drift House to your event. Fresh coastal menus, crafted cocktails, and warm hospitality — delivered and served wherever you celebrate.</p>
   </div>
+
+  <div class="cater-types reveal">
+    <span>Weddings</span>
+    <span>Corporate Events</span>
+    <span>Birthday Parties</span>
+    <span>Rehearsal Dinners</span>
+    <span>Holiday Parties</span>
+    <span>Showers &amp; Reunions</span>
+  </div>
+
   <div class="pkg-row">
     <article class="pkg reveal">
       <h3>Harbor Package</h3>
@@ -282,16 +407,18 @@
       <a href="#reserve" class="btn btn-beacon">Inquire</a>
     </article>
     <article class="pkg reveal">
-      <h3>Full Restaurant Buyout</h3>
+      <h3>Full-Service Catering</h3>
       <p class="pkg-price"><strong>Up to 180</strong> guests</p>
       <ul>
-        <li>Indoor + patio access</li>
+        <li>On-site or at your venue</li>
         <li>Fully custom menu</li>
-        <li>Dedicated event coordinator</li>
+        <li>Dedicated event coordinator &amp; staff</li>
       </ul>
       <a href="#reserve" class="btn btn-line">Inquire</a>
     </article>
   </div>
+
+  <p class="cater-foot reveal">Ready to plan? Email <a href="mailto:events@thedrifthousecoastal.com">events@thedrifthousecoastal.com</a> and our catering team will build a custom proposal.</p>
 </section>
 
 <!-- GIFT CARD -->
