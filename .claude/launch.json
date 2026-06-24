@@ -4,7 +4,7 @@
     {
       "name": "drifthouse",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4178", "--directory", "site"],
+      "runtimeArgs": ["-m", "http.server", "4178", "--directory", "."],
       "port": 4178
     }
   ]
