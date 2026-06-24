@@ -187,6 +187,11 @@ section{position:relative}
 }
 .menu-cat::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--amber-deep),transparent);opacity:.4}
 .menu-note{font-size:.82rem;font-style:italic;color:var(--ink-soft);opacity:.7;margin:-.6rem 0 1rem}
+.menu-feature{max-width:var(--maxw);margin:1.5rem auto 0;padding:0 clamp(1.2rem,4vw,2.5rem)}
+.menu-feature-inner{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:21/9}
+.menu-feature img{width:100%;height:100%;object-fit:cover;display:block}
+.menu-feature-cap{position:absolute;left:0;right:0;bottom:0;padding:1.6rem clamp(1.4rem,3vw,2.2rem);color:#fff;background:linear-gradient(0deg,rgba(8,10,18,.72),rgba(8,10,18,.15) 60%,transparent)}
+.menu-feature-cap h3{font-size:clamp(1.6rem,3.6vw,2.6rem);color:#fff;line-height:1.05}
 .menu-item{margin-bottom:1.1rem}
 .menu-item:last-child{margin-bottom:0}
 .mi-head{display:flex;align-items:baseline;gap:.4rem}
@@ -237,11 +242,14 @@ section{position:relative}
 .events .section-head{padding-top:clamp(5rem,11vw,9rem)}
 .events-grid{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.2rem,4vw,2.5rem);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
 .event-card{
-  border-radius:18px;padding:2rem 1.8rem;
+  border-radius:18px;padding:2rem 1.8rem;overflow:hidden;
   background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.03));
   border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(10px);
   transition:transform .4s var(--ease),background .4s;
 }
+.event-img{margin:-2rem -1.8rem 1.4rem;aspect-ratio:16/10;overflow:hidden}
+.event-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+.event-card:hover .event-img img{transform:scale(1.06)}
 .event-card:hover{transform:translateY(-6px);background:linear-gradient(160deg,rgba(255,207,122,.18),rgba(255,255,255,.04))}
 .event-day{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--beacon)}
 .event-card h3{font-size:2rem;margin:.5rem 0 1rem}
